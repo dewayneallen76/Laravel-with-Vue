@@ -6,7 +6,7 @@
     </head>
     <body>
         <div class="container">
-            <tasks list="{{ json_encode($tasks) }}"></tasks> 
+            <tasks></tasks> 
         </div>
         
         <template id="tasks-template">
@@ -17,7 +17,8 @@
                 </li>
             </ul>
         </template>
-
+        
+        <script src="http://code.jquery.com/jquery.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.8/vue.js"></script>
         <script src="/js/main.js"></script>
     </body>
