@@ -14,11 +14,12 @@
             <ul class="list-group">
                 <li class="list-group-item" v-for="task in list">
                     @{{ task.body }}
+                    <strong>X</strong>
                 </li>
             </ul>
         </template>
         
-        <script src="http://code.jquery.com/jquery.js"></script>
+        <script src="https://code.jquery.com/jquery.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.8/vue.js"></script>
         <script src="/js/main.js"></script>
     </body>
