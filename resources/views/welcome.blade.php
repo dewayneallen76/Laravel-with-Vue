@@ -6,19 +6,15 @@
     </head>
     <body>
         <div class="container">
-            
-            
-            <tasks list=""></tasks> 
+            <tasks list="{{ json_encode($tasks) }}"></tasks> 
         </div>
         
         <template id="tasks-template">
             <h1>My Tasks</h1>
             <ul class="list-group">
-                @foreach($tasks as $task)
-                    <li class="list-group-item">
-                        {{ $task->body }}
-                    </li>
-                @endforeach
+                <li class="list-group-item" v-for="task in list">
+                    @{{ task.body }}
+                </li>
             </ul>
         </template>
 
