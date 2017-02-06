@@ -19,8 +19,9 @@
             </ul>
         </template>
         
-        <script src="https://code.jquery.com/jquery.js"></script>
+        
         <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.8/vue.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/vue-resource/1.2.0/vue-resource.js"></script>
         <script src="/js/main.js"></script>
     </body>
 </html>
