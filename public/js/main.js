@@ -14,7 +14,7 @@ Vue.component('tasks', {
 	methods: {
 
 		fetchTaskList: function() {
-			$.getJSON('api/tasks', function(tasks) {
+			this.$http.get('api/tasks', function(tasks) {
 				this.list = tasks;
 			}.bind(this));
 		},
